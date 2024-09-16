@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Volative
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 
+[![Progress API Rest](https://img.shields.io/badge/API_REST-25%25-orange)](https://github.com/latra/volative-server) [![Progress Frontend](https://img.shields.io/badge/Webpage-0%25-red)](https://github.com/latra/volative-webpage) [![Progress](https://img.shields.io/badge/Client-0%25-red)]()
 
-## Available Scripts
 
-In the project directory, you can run:
+Volative is a tool originally conceived to collaborate with the  [Voice Over](https://github.com/mrthinger/wow-voiceover)  project. It provides a system that allows collaborators from the project to offer their GPUs for voice generation.
 
-### `npm start`
+## Project Overview
+Volative serves as a bridge between GPU owners and the voice generation task. By distributing voice generation requests to contributors who provide their GPUs, it helps reduce the computing load, thus speeding up the voice synthesis process. The project integrates directly with the Voice Over project, enabling real-time, high-quality voice generation for its applications, such as in video game narration or character dialogue.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is divided in three main modules:
+- [Rest API](https://github.com/latra/volative-server)
+- [Frontend Webpage](https://github.com/latra/volative-webpage)
+- Client Tool
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies
+  
+The backbone of the project is supported by various technologies and open-source projects. The main technologies used include:
 
-### `npm test`
+<table>
+  <tr>
+    <td style="text-align:center;">
+      <a href="https://coqui.ai/">
+        <img src="https://img.shields.io/badge/Coqui_AI-black?style=for-the-badge&logo=huggingface">
+      </a>
+    </td>
+    <td style="text-align:center;">
+      Used for text-to-speech (TTS) and voice cloning.
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">
+      <a href="https://fastapi.tiangolo.com/">
+        <img src="https://img.shields.io/badge/Fast%20API-grey?style=for-the-badge&logo=fastapi">
+      </a>
+    </td>
+    <td style="text-align:center;">
+      A modern, fast (high-performance) web framework for building REST APIs with Python.
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">
+      <a href="https://es.react.dev/">
+        <img src="https://img.shields.io/badge/REACT-black?style=for-the-badge&logo=react">
+      </a>
+    </td>
+    <td style="text-align:center;">
+      A JavaScript library used for building user interfaces, particularly for the frontend of the project.
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">
+      <a href="https://www.rabbitmq.com/">
+        <img src="https://img.shields.io/badge/RabbitMQ-grey?style=for-the-badge&logo=rabbitmq">
+      </a>
+    </td>
+    <td style="text-align:center;">
+      A message-broker that facilitates communication between services, ensuring that voice generation requests are properly handled.
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">
+      <a href="https://www.postgresql.org/">
+        <img src="https://img.shields.io/badge/Postgre_SQL-black?style=for-the-badge&logo=postgresql">
+      </a>
+    </td>
+    <td style="text-align:center;">
+      A robust, relational database used to manage the project’s data and request handling.
+    </td>
+  </tr>
+</table>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Acknowledgements
+- [Voice Over](https://github.com/mrthinger/wow-voiceover/) - The main project that inspired and provided context for Volative's development.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+- [Paula "Latra" Gallucci](https://github.com/latra)
